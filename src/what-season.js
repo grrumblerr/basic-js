@@ -23,9 +23,6 @@ function getSeason(date) {
     if (Object.prototype.toString.call(date).slice(8, -1) !== 'Date') {
         throw new Error ('Invalid date!');
     }
-    // if (Object.prototype.toString.call(date) !== '[object Date]') {
-    //     throw new Error ('Invalid date!');
-    // }
     if (!date.getTime ||
         date[Symbol.toStringTag] === 'Date') {
         throw new Error('Invalid date!')
@@ -50,10 +47,6 @@ function getSeason(date) {
         // console.log(season);
         return season;
     }
-//     else return 'Invalid date!';
-// }
-
-// getSeason(2019, 8, 22, 3, 0, 11, 500);
 
 module.exports = {
   getSeason

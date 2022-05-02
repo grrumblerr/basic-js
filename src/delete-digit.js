@@ -17,9 +17,9 @@ const { NotImplementedError } = require('../extensions/index.js');
   let nums = [];
   n = n.toString();
   for (let i = 0; i < n.length; i++) {
-    nums.push(+(n.replace(n[i], '')))
+    nums.push(+(n.replace(n[i], '')));
   }
-  return Math.max(...nums)
+  return Math.max(...nums);
 }
 
 module.exports = {
